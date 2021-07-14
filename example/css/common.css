@@ -42,8 +42,6 @@ input {
 }
 .nav li {
     float: left;
-    
-    line-height: 80px;
     padding-left: 5%;
     padding-right: 5%;
     
