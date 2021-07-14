@@ -33,10 +33,9 @@ input {
 }
 
 .nav {
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: #b1191a;
-    padding-left: 8%;
     padding-top: 60px;
     
 }
