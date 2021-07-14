@@ -22,31 +22,7 @@
 	<script src="../us-map.js"></script>
 	
 	<script>
-	$(document).ready(function() {
-	  $('#map').usmap({
-	    'stateSpecificStyles': {
-	      'AK' : {fill: '#f00'}
-	    },
-	    'stateSpecificHoverStyles': {
-	      'HI' : {fill: '#ff0'}
-	    },
-	    
-	    'mouseoverState': {
-	      'HI' : function(event, data) {
-	        //return false;
-	      }
-	    },
-	    
-	    
-	    'click' : function(event, data) {
-	      $('#alert')
-	        .text('Click '+data.name+' on map 1')
-	        .stop()
-	        .css('backgroundColor', '#ff0')
-	        .animate({backgroundColor: '#ddd'}, 1000);
-	    }
-	  });
-	  
+	$(document).ready(function() {	  
 	  $('#map2').usmap({
 	    'stateStyles': {
 	      fill: '#025', 
@@ -85,9 +61,7 @@
     </nav>
   <div id="alert">Click alerts</div>
   
-  <div id="map" style="width: 930px; height: 630px; border: solid 3px red;"></div>
-  
-  <button id="over-md">mouseover MD</button> <button id="out-md">mouseout MD</button>
+  <div id="map" style="width: 300px; height: 300px; border: solid 3px red;"></div>
   <div id="map2" style="width: 300px; height: 300px;"></div>
     <div class="main clearfix">   
         <div class="box1">
