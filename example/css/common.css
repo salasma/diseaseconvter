@@ -65,26 +65,11 @@ input {
     background-color: #1692c8;
     padding-top: 30px;
     margin-left: 46%;
-    
-.navnewuser li {
-    float: left;
+        float: left;
     padding-left: 5%;
     padding-right: 5%;
-    
-}
-.navnewuser li a {
-    
-    font-size: 32px;
-    color: #fff;
-}
-.navnewuser li:hover {
-    background-color: #fff;
-    
-    
-}
-.navnewuser li:hover a {
-    color: #1692c8;
 
+    
 .footer {
     height: 200px;
     width: 100%;
