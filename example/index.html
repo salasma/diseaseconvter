@@ -43,8 +43,7 @@
 	    
 	    'click' : function(event, data) {
 	      $('#alert')
-	        .text('Location: '+data.name+' on map')
-		.test('Common Flu:')
+	        .text('Location: '+data.name+'\nCommon Flue: 0\nCold: 0\nFood Poisoning: 0')
 	        .stop()
 	        .css('backgroundColor', '#00b7eb')
 	        .animate({backgroundColor: '#ddd'}, 1000);
