@@ -58,7 +58,29 @@ input {
 .nav li:hover a {
     color: #1692c8;
 }
-
+.navnewuser {
+    height: 40px;
+    width: 20%;
+    background-color: #1692c8;
+    padding-top: 30px;
+.navnewuser li {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+.navnewuser li a {
+    
+    font-size: 32px;
+    color: #fff;
+}
+.navnewuser li:hover {
+    background-color: #fff;
+    
+    
+}
+.navnewuser li:hover a {
+    color: #1692c8;
 
 .footer {
     height: 200px;
