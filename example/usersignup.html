@@ -20,7 +20,7 @@
     
     <div class="main">
         <div class="info">
-            <h1>Login</h1>
+            <h1>New User Sign Up</h1>
         </div>
         <div class="text">
             <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST" name="contact" id="contact">
@@ -29,15 +29,27 @@
                         <label>E-mail address:</label><input type="text" name="email">
                     </li>
                     <li>
-                        <label>Password</label><input type="text" class="content" name="content">
+                        <label>Password:</label><input type="text" class="content" name="content">
                     </li>
+                    <li>
+                        <label>Diagnosis:</label><input type="text" class="content" name="content">
+                    </li>
+                    <li>
+                        <label>Location:</label><input type="text" class="content" name="content">
+                    </li>
+                    <div id="wrapper">
+                     <label for="yes_no_radio">Receive Email Notifications?</label>
+                        <p>
+                        <input type="radio" name="yes_no" checked>Yes</input>
+                        </p>
+                            <p>
+                        <input type="radio" name="yes_no">No</input>
+                        </p>
+                            </div>
                     <li><input class="btn" type="submit" value="Submit"></li>
                    
                 </ul>
             </form> 
-            <a href="index.html">
-            <input class="btn" value="  New User? Sign Up Here">
-     </a>
         </div>
     </div>
 
