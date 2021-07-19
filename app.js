@@ -4,31 +4,32 @@ const bodyParser = require("body-parser")
 const pool = mysql.createPool({
 	connectionLimit : 10,
 	host: 'classmysql.engr.oregonstate.edu',
-	user: 'cs290_salasma',
+	user: 'cs340_salasma',
 	password: '4183',
-	database:"cs290_salasma"
+	database:"cs340_salasma"
 })
 
 
 
 const app = Express()
 
-app.use(Express.static('public'))
+app.use(Express.static('diseaseconvter-main'))
 
 app.use(bodyParser.urlencoded({extended:false}))
 
 app.get('/',(req,res)=>{
-	res.sendFile(__dirname+'/public/html/index.html')
+	res.sendFile(__dirname+'/diseaseconvter-main/example/index.html')
 })
 
-app.get('/edit',(req,res)=>{
-	res.sendFile(__dirname+'/public/html/edit.html')	
+app.get('/profile',(req,res)=>{
+	res.sendFile(__dirname+'/diseaseconvter-main/example/contact.html')	
 })
 
-
-app.get("/getdata",(req,res)=>{
-	let sql = `select * from sport`
-	pool.query(sql,(error,result,fields)=>{
-		res.json(result)
-	})
+app.get('/loggedin',(req,res)=>{
+	res.sendFile(__dirname+'/diseaseconvter-main/example/loggedin.html')	
 })
+app.get('/signup',(req,res)=>{
+	res.sendFile(__dirname+'/diseaseconvter-main/example/usersignup.html')	
+})
+
+app.listen(1499)
