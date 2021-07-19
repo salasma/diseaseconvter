@@ -3,10 +3,10 @@
     width: 150px;
     background-color: #1692c8;
     margin-top: 20px;
-    margin-left: 50%;
     padding-top: 20px;
+    padding-left: 20px;
     color: white;
-    text-align: center;
+    text-align: left;
     
 }
 .main .info h1 {
